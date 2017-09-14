@@ -12,7 +12,7 @@
 # I had to replace cStringIO with io and urllib2 with urllib, for
 # compatibility from 2.x to 3.x Ii was running from /v3/).
 
-from bottle import route, get, request, run, template, static_file
+from bottle import route, get, request, run, template, static_file, redirect
 import StringIO # NB: don't use cStringIO since it doesn't support unicode!!!
 import json
 import pg_logger
@@ -28,6 +28,9 @@ def web_exec(name):
 def live_exec(name):
     return 'OK'
 
+@route('/')
+def root():
+  redirect('/visualize.html')
 
 @route('/<filepath:path>')
 def index(filepath):
