@@ -593,8 +593,6 @@ var CPP_EXAMPLES = {
 
 
 $(document).ready(function() {
-  setSurveyHTML();
-
   $("#hideHeaderLink").click(function() {
     $("#experimentalHeader").hide();
     if (myVisualizer) {
@@ -703,15 +701,12 @@ $(document).ready(function() {
     initCodeopticon(); // defined in codeopticon-learner.js
   }
 
+  /*
   $("#createTestsLink").click(function() {
     initTestcasesPane('#testCasesPane');
     $(this).hide();
     return false;
   });
+  */
 
-  $("#liveModeBtn").click(function() {
-    var myArgs = getAppState();
-    var urlStr = $.param.fragment('live.html', myArgs, 2 /* clobber all */);
-    window.open(urlStr); // open in new tab
-  });
 });

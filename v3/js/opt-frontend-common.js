@@ -194,7 +194,7 @@ function initAceEditor(height) {
   // auto-grow height as fit
   pyInputAceEditor.setOptions({minLines: 18, maxLines: 1000});
 
-  $('#codeInputPane').css('width', '700px');
+  $('#codeInputPane').css('width', '800px');
   $('#codeInputPane').css('height', height + 'px'); // VERY IMPORTANT so that it works on I.E., ugh!
 
   initDeltaObj();
@@ -1087,6 +1087,7 @@ function parseQueryString() {
     codeopticonUsername = queryStrOptions.codeopticonUsername; // GLOBAL defined in codeopticon-learner.js
   }
 
+  /*
   if (queryStrOptions.testCasesLst) {
     $("#createTestsLink").hide();
     initTestcasesPane('#testCasesPane');
@@ -1094,6 +1095,7 @@ function parseQueryString() {
       addTestcase(e);
     });
   }
+  */
 
   // ugh tricky -- always start in edit mode by default, and then
   // switch to display mode only after the code successfully executes

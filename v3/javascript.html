@@ -30,8 +30,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
 
 <head>
-  <title>JavaScript Tutor - Visualize JavaScript code execution to learn
-  JavaScript online</title>
+  <title>JavaScript Tutor</title>
 
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 
@@ -85,30 +84,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <tr>
 <td valign="top">
 
-<div id="ssDiv">
-  <button id="sharedSessionBtn" type="button" class="togetherjsBtn">
-  Start shared session
-  </button>
-  <div style="font-size: 7pt; margin-left: 2px; margin-top: 3px;">
-  <a href="https://www.youtube.com/watch?v=Z2TIjNArOK4" target="_blank">What are shared sessions?</a>
-  </div>
-</div>
-
-<div>
-<button id="getTutorBtn" type="button" class="togetherjsBtn" style="display: none;">
-Get help from a tutor
-</button>
-</div>
-
-<div id="sharedSessionDisplayDiv" style="display: none;">
-  <button id="stopTogetherJSBtn" type="button" class="togetherjsBtn">
-  End shared session
-  </button>
-
-  <div style="width: 200px; font-size: 8pt; color: #666; margin-top: 5px;">
-  Your chat logs and code may be recorded, anonymized, and analyzed for research.
-  </div>
-</div>
 
 </td>
 <td valign="top">
@@ -116,39 +91,6 @@ Get help from a tutor
 <div id="togetherjsStatus"></div>
 
 <div id="surveyHeader"></div>
-
-<div id="adHeader" style="margin-left: 15px; margin-bottom: 35px;">
-
-<div id="optHeader" style="font-family: Georgia, Palatino, Times, serif; font-size: 13pt; margin-bottom: 10px;">
-JavaScript Tutor - Visualize JavaScript code execution to learn JavaScript online
-
-<p style="font-size: 10pt";>
-(also visualize
-<a href="visualize.html#py=2">Python</a>,
-<a href="java.html">Java</a>,
-<a href="javascript.html">JavaScript</a>,
-<a href="typescript.html">TypeScript</a>,
-<a href="ruby.html">Ruby</a>,
-<a href="c.html">C</a>,
-and
-<a href="cpp.html">C++</a>
-code)
-</p>
-
-</div>
-
-<!--
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7519401450079227"
-     data-ad-slot="9796201192"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
--->
-
-</div>
 
 </td>
 </tr>
@@ -203,13 +145,7 @@ code)
   </select>
 </div>
 
-
-<p style="margin-top: 25px;"><a href="#" id="createTestsLink">Create test cases</a></p>
-
-<div id="testCasesPane"></div>
-
 <p style="margin-top: 25px; font-weight: bold;">JavaScript Examples</p>
-
 <p style="margin-top: 5px;">
   <a class="exampleLink" id="jsFactExLink" href="#">factorial</a> |
   <a class="exampleLink" id="jsDatatypesExLink" href="#">data types</a> |
@@ -224,47 +160,6 @@ code)
 
 
 <div id="pyOutputPane">
-</div>
-
-<div id="footer">
-
-<p>
-  <button id="genUrlBtn" class="smallBtn" type="button">Generate permanent link</button> <input type="text" id="urlOutput" size="70"/>
-</p>
-
-<p>Click the button above to create a permanent link to your
-visualization. To report a bug, paste the link along with a brief error
-description in an email addressed to philip@pgbovine.net</p>
-
-<div id="embedLinkDiv">
-<p>
-  <button id="genEmbedBtn" class="smallBtn" type="button">Generate embed code</button> <input type="text" id="embedCodeOutput" size="70"/>
-</p>
-
-<p>To embed this visualization in your webpage, click the 'Generate
-embed code' button above and paste the resulting HTML code into your
-webpage. Adjust the height and width parameters and
-change the link to <b>https://</b> if needed.</p>
-</div>
-
-<p style="margin-top: 25px;">
-
-This tool runs JavaScript in Node.js v6.0.0 with limited support for ES6. <a
-href="https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/javascript">Backend
-source code</a>.</p>
-
-<p style="margin-top: 30px;">Privacy Policy: By using Online Python
-Tutor, your visualized code, options, user interactions, text chats, and
-IP address are logged on our server and may be analyzed for research
-purposes. Nearly all Web services collect this basic information from
-users. However, the Online Python Tutor website (pythontutor.com) does
-not collect any personal information or session state from users, nor
-does it issue any cookies.</p>
-
-<p style="margin-top: 25px;">
-Copyright &copy; <a href="http://www.pgbovine.net/">Philip Guo</a>.  All rights reserved.
-</p>
-
 </div>
 
 </body>

@@ -62,16 +62,12 @@ div.ExecutionVisualizer #dataViz {
 
 div.ExecutionVisualizer div#codeDisplayDiv {
   /* set this as default unless user specifies a custom size */
-  width: 550px;
+  width: 700px;
 }
 
 div.ExecutionVisualizer div#pyCodeOutputDiv {
-  /*max-width: 550px;*/
   max-height: 460px;
-  /*max-height: 620px;*/
   overflow: auto;
-  /*margin-bottom: 4px;*/
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -706,7 +702,7 @@ textarea.bubbleInputText {
 	.ui-tooltip-pgbootstrap .ui-tooltip-content{
 		padding: 5px /* 5px is minimum or else it might look ugly */ 8px;
 	}
-	
+
 
 		.ui-tooltip-pgbootstrap .ui-tooltip-titlebar .ui-state-default{
 			right: 9px; top: 49%;
@@ -765,7 +761,7 @@ textarea.bubbleInputText {
 	.ui-tooltip-pgbootstrap-stub .ui-tooltip-content{
 		padding: 6px 9px;
 	}
-	
+
 
 div.ExecutionVisualizer .annotationText,
 div.ExecutionVisualizer .vizDescriptionText {
