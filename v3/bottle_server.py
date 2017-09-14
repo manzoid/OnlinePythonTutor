@@ -30,7 +30,7 @@ def live_exec(name):
 
 @route('/')
 def root():
-  redirect('/visualize.html')
+  redirect('/javascript.html')
 
 @route('/<filepath:path>')
 def index(filepath):
