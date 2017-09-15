@@ -1,7 +1,7 @@
 // named after barrel of monkeys:
-// each one hangs on to the next
+// 各項目が次々とつながっています
 public class LinkedList {
-   
+
    // structure of items in list
    class Node {
       // each node knows "next" node
@@ -13,17 +13,17 @@ public class LinkedList {
          name = initialName;
       }
    }
-   
+
    // beginning of the list, initially empty
    private Node first = null;
-   
+
    // a demo to create a length-3 list
    public void threeKongs() {
       first = new Node("DK Sr.");
       first.next = new Node("DK");
       first.next.next = new Node("DK Jr.");
    }
-   
+
    // use a loop to print all
    public void printAll() {
       // a while loop also can work
